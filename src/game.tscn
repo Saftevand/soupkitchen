@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://ne6uw7mhu84l"]
+
+[ext_resource type="Script" uid="uid://cm5kt3vhoricp" path="res://src/game.gd" id="1_80nbo"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_e2o6t"]
+font_size = 72
+shadow_size = 5
+shadow_color = Color(0, 0, 0, 1)
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_80nbo")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -87.0
+offset_top = -49.5
+offset_right = 87.0
+offset_bottom = 49.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Soup"
+label_settings = SubResource("LabelSettings_e2o6t")
+horizontal_alignment = 1
+vertical_alignment = 1
