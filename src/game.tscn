@@ -28,3 +28,12 @@ text = "Soup"
 label_settings = SubResource("LabelSettings_e2o6t")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Click"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
